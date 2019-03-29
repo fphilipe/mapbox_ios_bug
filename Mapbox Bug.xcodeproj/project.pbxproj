@@ -12,8 +12,8 @@
 		4A28580C224D30D900EEB3D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A28580B224D30D900EEB3D4 /* Assets.xcassets */; };
 		4A28580F224D30D900EEB3D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A28580D224D30D900EEB3D4 /* LaunchScreen.storyboard */; };
 		4A28581A224D30D900EEB3D4 /* Mapbox_BugUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A285819224D30D900EEB3D4 /* Mapbox_BugUITests.swift */; };
-		4A285825224D35AF00EEB3D4 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A285824224D35AF00EEB3D4 /* Mapbox.framework */; };
-		4A285826224D35AF00EEB3D4 /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A285824224D35AF00EEB3D4 /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4A285835224E025E00EEB3D4 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A285834224E025E00EEB3D4 /* Mapbox.framework */; };
+		4A285836224E025E00EEB3D4 /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A285834224E025E00EEB3D4 /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +33,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4A285826224D35AF00EEB3D4 /* Mapbox.framework in Embed Frameworks */,
+				4A285836224E025E00EEB3D4 /* Mapbox.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,7 +50,7 @@
 		4A285815224D30D900EEB3D4 /* Mapbox BugUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mapbox BugUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A285819224D30D900EEB3D4 /* Mapbox_BugUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapbox_BugUITests.swift; sourceTree = "<group>"; };
 		4A28581B224D30D900EEB3D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4A285824224D35AF00EEB3D4 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mapbox.framework; sourceTree = "<group>"; };
+		4A285834224E025E00EEB3D4 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapbox.framework; path = Carthage/Build/iOS/Mapbox.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A285825224D35AF00EEB3D4 /* Mapbox.framework in Frameworks */,
+				4A285835224E025E00EEB3D4 /* Mapbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,7 +75,7 @@
 		4A2857F8224D30D700EEB3D4 = {
 			isa = PBXGroup;
 			children = (
-				4A285824224D35AF00EEB3D4 /* Mapbox.framework */,
+				4A285834224E025E00EEB3D4 /* Mapbox.framework */,
 				4A285803224D30D700EEB3D4 /* Mapbox Bug */,
 				4A285818224D30D900EEB3D4 /* Mapbox BugUITests */,
 				4A285802224D30D700EEB3D4 /* Products */,
@@ -394,6 +394,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "Mapbox Bug/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -416,6 +417,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "Mapbox Bug/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
